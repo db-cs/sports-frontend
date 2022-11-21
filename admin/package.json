@@ -1,11 +1,20 @@
 {
   "name": "admin",
+  "source": "main/index.html",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "dependencies": {
     "parcel": "^2.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
   }
 }
