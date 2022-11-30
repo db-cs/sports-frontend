@@ -1,6 +1,6 @@
 {
   "name": "admin",
-  "source": "main/index.html",
+  "source": "public/index.html",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
