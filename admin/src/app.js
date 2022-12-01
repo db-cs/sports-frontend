@@ -1,3 +1,9 @@
+import {Form} from "./components/Form"
 export function App() {
-    return <h1>Hello world!</h1>;
+    return (
+      <div>
+        <h1>Dobyns-Bennett Sports Page</h1>
+        <Form />
+      </div>
+    );
   }
