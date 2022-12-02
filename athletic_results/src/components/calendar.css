@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Lato&display=swap');
+
+
+.calendar{
+    width: 400px;
+    height: 60xpx;
+    padding: 10px;
+    margin: 20px;
+    background-color:#E3E3E3;
+    float:right;
+}
+.title{
+    font-size:30px;
+    color:#551221;
+    text-align:center;
+    font-family:'josefin sans';
+}
+.react-calendar__navigation{
+    font-size:15px;
+    color:#E3E3E3 ;
+    background-color:#551221;
+    text-align:center;
+    padding-top: 4px;
+    padding-right: 20px;
+    padding-bottom: 4px;
+    padding-left: 20px;
+    border-radius: 25px;
+    margin: 5px;
+    font-family:'lato';
+
+}
+
+.react-calendar__month-view__days button{
+    padding-top: 23px !important;
+    padding-right: 10px !important;
+    padding-bottom: 23px !important;
+    padding-left: 10px !important;
+    border-radius:15px !important;
+    
+}
+.react-calendar__month-view__days button{
+    background-color: #E3E3E3;
+    color:#551221;
+    font-family: 'lato';
+}
+
+.react-calendar__month-view__days button:hover{
+    background-color: #d3d3d3;
+    border-radius: 10px;
+}
+
+.react-calendar__tile{
+    border-radius: 10px;
+}
+.react-calendar__tile:hover{
+    border-radius: 10px;
+    background-color: #d3d3d3;  
+}
+
+.react-calendar__navigation__arrow {
+    padding-left: 10px;
+    padding-right: 5px;
+    font-size:17px;
+}
+
+.react-calendar__month-view__weekdays abbr{
+    font-size: 17px;
+    text-decoration: none !important;
+}
+
+.react-calendar__month-view__weekdays__weekday{
+    text-align: center !important;
+    text-decoration: underline;
+    font-family:'josefin sans';
+    color: #333;
+}
+
+.react-calendar__tile--active{
+    background-color: #551221 !important;
+    color:#E3E3E3 !important;
+}
+
+.react-calendar__tile--now {
+    border: 1px solid #551221;
+}
+
+.react-calendar__month-view__days__day--neighboringMonth{
+    color: #bbbbbb !important;
+}
