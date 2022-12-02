@@ -1,4 +1,5 @@
-import { ReactCarousel } from "./components/carousel"
+import { Header } from "./components/header"
+
 export function App() {
-    return <ReactCarousel />;
-  }
+  return (<><Header /></>);
+}
