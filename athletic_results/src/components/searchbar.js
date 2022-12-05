@@ -1,5 +1,9 @@
-export const SearchBar = () =>(
-   <form>
+import {useState} from "react"
+export const SearchBar = ({onChange}) => {
+    const [value, setValue] = useState("")
+
+    
+   return(<form>
         <input 
             type="search"
             class="
@@ -19,6 +23,9 @@ export const SearchBar = () =>(
             m-0
             focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
             placeholder="Search"
+            value={value}
+            onChange={(value) => setValue(value)}
+            onSubmit={() => onChange(value)}
         />
-    </form>
-);
+    </form>)
+};
