@@ -3,7 +3,7 @@ export const Form = (props) => {
     return (
     <form>
     <label for="sport" className="header">Choose A Sport:</label><br />
-    <select name="sport" id="sport" form="sportform">
+    <select name="sport" id="sport" form="sportform" className="select">
       <option value="Football">Football</option>
       <option value="Baseball">Baseball</option>
       <option value="Basketball">Basketball</option>
@@ -11,28 +11,32 @@ export const Form = (props) => {
       <option value="Bowling">Bowling</option>
       <option value="Golf">Golf</option>
       <option value="Volleyball">Volleyball</option>
-      <option value="Lacrosse">Lacrosse</option>
-      <option value=""></option>
-      <option value=""></option>
-      <option value=""></option>
-      <option value=""></option>
-      <option value=""></option>
+      <option value="CrossCountry">Cross Country</option>
+      <option value="Softball">Softball</option>
+      <option value="Swim">Swim</option>
+      <option value="Tennis">Tennis</option>
+      <option value="Track">Track</option>
+      <option value="Wrestling">Wrestling</option>
     </select><br />
       <label for="type" className="header">Which Type?</label><br />
       <input type="radio" id="Mens" name="gender" value="Mens" />
       <label for="Mens">Mens</label><br />
       <input type="radio" id="Womens" name="gender" value="Womens" />
       <label for="Womens">Womens</label><br />
+      <input type="radio" id="WontMatter" name="gender" value="Womens" />
+      <label for="WontMatter">Doesn't Have Gender Specific Type</label><br />
 
       <label for="Where" className="header">Where?</label><br />
-      <input type="radio" id="Home" name="gender" value="Home" />
+      <input type="radio" id="Home" name="where" value="Home" />
       <label for="Home">Home</label><br />
-      <input type="radio" id="Away" name="gender" value="Away" />
+      <input type="radio" id="Away" name="where" value="Away" />
       <label for="Away">Away</label><br />
+      <input type="radio" id="Other" name="Other" value="Other" />Other: 
+      <input type="text" id="Other" name="Other" /><br />
 
       <label for="Date" className="secsep">Date</label><br />
       <label for="year" className="header">Year:</label><br />
-    <select name="year" id="year" form="yearform">
+    <select name="year" id="year" form="yearform" className="select">
       <option value="2024">2024</option>
       <option value="2023">2023</option>
       <option value="2022">2022</option>
@@ -40,8 +44,8 @@ export const Form = (props) => {
       <option value="2020">2020</option>
     </select><br />
 
-    <label for="Month" classname="header">Month:</label><br />
-    <select name="Month" id="Month" form="Monthform">
+    <label for="Month" className="header">Month:</label><br />
+    <select name="Month" id="Month" form="Monthform" className="select">
       <option value="1">1</option>
       <option value="2">2</option>
       <option value="3">3</option>
@@ -57,7 +61,7 @@ export const Form = (props) => {
     </select><br />
 
     <label for="Day" className="header">Day:</label><br />
-    <select name="Day" id="Day" form="Dayform">
+    <select name="Day" id="Day" form="Dayform" className="select">
       <option value="1">1</option>
       <option value="2">2</option>
       <option value="3">3</option>
@@ -90,10 +94,20 @@ export const Form = (props) => {
       <option value="30">30</option>
       <option value="31">31</option>
     </select><br />
-      <label for="Schoolname" classname="header">Opposing School:</label><br />
+      <label for="Schoolname" className="header">Opposing School:</label><br />
       <input type="text" id="schname" name="schname" /><br />
-
-      <input type="submit" classname="submit" value="submit" />
+      <label for="ourscore" className="header">Our score:</label><br />
+      <input type="text" id="ourscore" name="ourscore" /><br />
+      <label for="oppscore" className="header">Opposing score:</label><br />
+      <input type="text" id="oppscore" name="oppscore" /><br />
+      <label for="Where" className="header">Win/lose:</label><br />
+      <input type="radio" id="win" name="win/lose" value="win" />
+      <label for="win">Win</label><br />
+      <input type="radio" id="lose" name="win/lose" value="lose" />
+      <label for="lose">Lose</label><br />
+      <input type="radio" id="Place" name="Place" value="Place" />Place: 
+      <input type="text" id="Place" name="Place" /><br />
+      <input type="submit" className="submit" value="submit" /><br />
     </form>
     )
 }
