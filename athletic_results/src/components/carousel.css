@@ -1,31 +1,13 @@
 
 img{
-    width:400px !important;
-    height:266px !important;
+    width:800px !important;
+    height:600px !important;
 }
 .carousel-slider{
-    width:400px !important;
-    height:266px !important;
-}
-.legend{
-    display:none; 
-}
-.thumb{
-    padding-top: 0px !important;
-    padding-left: 0px !important;
-    padding-bottom: 0px !important;
-    padding-right: 0px !important;
-    display:none;
-    height: 20px;
-    width: 20px !important;
+    width:800px !important;
+    height:600px !important;
 }
 
-.thumbs-wrapper.axis-vertical{
-    display:none;
-}
 
-.carousel-status{
-    display:none;
-}
 
 
