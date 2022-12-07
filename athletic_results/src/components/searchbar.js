@@ -2,8 +2,17 @@ import {useState} from "react"
 export const SearchBar = ({onChange}) => {
     const [value, setValue] = useState("")
 
+    const handleChange = (e) => {
+        setValue(e.target.value)
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        onChange(value)
+    }
     
-   return(<form>
+   return(
+   <form onSubmit={handleSubmit}>
         <input 
             type="search"
             class="
@@ -24,8 +33,8 @@ export const SearchBar = ({onChange}) => {
             focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
             placeholder="Search"
             value={value}
-            onChange={(value) => setValue(value)}
-            onSubmit={() => onChange(value)}
+            onChange={handleChange}
         />
-    </form>)
+    </form>
+    )
 };
