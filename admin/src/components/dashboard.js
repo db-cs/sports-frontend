@@ -1,14 +1,16 @@
+import {useState} from "react"
 import { AllResults } from "./AllResults";
+import { Form } from "./Form";
 
 export const Dashboard = (props) => {
-    function openForm() {
-        alert('BUTTON!');
-      }
+    const [showForm, setShowForm] = useState(false);
+    const handleClick = () => setShowForm(!showForm)
     return (
         <> 
             <h1> Dashboard </h1>
-            <button onClick={openForm}>New entry</button>
+            <button onClick={handleClick}>New entry</button>
             <AllResults />
+            {showForm && <Form />}
         </>
     )
 }
