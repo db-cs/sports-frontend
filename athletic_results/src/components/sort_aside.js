@@ -1,8 +1,14 @@
 import { useState } from "react";
-export const Sort_Aside = ({ data }) => {
+export const Sort_Aside = ({ data, update }) => {
   const [showDropdown, setShowDropdown] = useState(false);
 
   const handleClick = () => {
+    setShowDropdown(!showDropdown);
+  };
+
+  const selectSort = (e) => {
+    const selection = e.target.textContent.toLowerCase();
+    update(selection);
     setShowDropdown(!showDropdown);
   };
 
@@ -33,14 +39,7 @@ export const Sort_Aside = ({ data }) => {
             stroke="currentColor"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M19 9l-7 7-7-7"
-            ></path>
-          </svg>
+          ></svg>
         </button>
       </div>
 
@@ -58,6 +57,7 @@ export const Sort_Aside = ({ data }) => {
             <a
               href="#"
               className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+              onClick={selectSort}
             >
               Date
             </a>
@@ -66,6 +66,7 @@ export const Sort_Aside = ({ data }) => {
             <a
               href="#"
               className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+              onClick={selectSort}
             >
               Sport
             </a>
@@ -74,6 +75,7 @@ export const Sort_Aside = ({ data }) => {
             <a
               href="#"
               className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+              onClick={selectSort}
             >
               Results
             </a>
@@ -93,10 +95,7 @@ export const Sort_Aside = ({ data }) => {
             value=""
             id="flexCheckDefault"
           ></input>
-          <label
-            className="form-check-label inline-block text-gray-800"
-            for="flexCheckDefault"
-          >
+          <label className="form-check-label inline-block text-gray-800">
             DB Wins
           </label>
         </div>
