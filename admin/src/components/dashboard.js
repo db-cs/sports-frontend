@@ -8,8 +8,8 @@ export const Dashboard = (props) => {
     return (
         <> 
             <h1> Dashboard </h1>
-            <button onClick={handleClick}>New entry</button>
             <AllResults />
+            <button onClick={handleClick}>New entry</button>
             {showForm && <Form />}
         </>
     )
