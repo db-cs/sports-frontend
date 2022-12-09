@@ -1,6 +1,5 @@
 import { useState } from "react"
 import { SearchBar } from "./components/searchbar";
-import { SortBy } from "./components/sortby";
 import {Table } from "./components/table"
 
 const initialData = [
