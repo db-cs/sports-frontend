@@ -1,3 +1,5 @@
+import {nanoid} from "nanoid";
+
 const TableRow = ({date, sport, results}) => (
   
   <tr className="even:bg-[#E3E3E3] odd:bg-[#575252] even:text-black odd:text-[#E3E3E3]">
@@ -33,8 +35,7 @@ export const Table = ({data}) => (
               </tr>
             </thead>
             <tbody>
-              {data.map(game_entry => <TableRow date={game_entry.date} sport={game_entry.sport} results={game_entry.results} />)}
-              <TableRow date="MA 10 September 2022 at 8:00" sport="M Soccer" results="15-3"/>
+              {data.map(game_entry => <TableRow key={nanoid()} date={game_entry.date} sport={game_entry.sport} results={game_entry.results} />)}
             </tbody>
           </table>
         </div>
