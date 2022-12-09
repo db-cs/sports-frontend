@@ -1,4 +1,5 @@
 import { SearchBar } from "./components/searchbar.js";
+import { SortBy } from "./components/sortby.js";
 export function App() {
     const handleChange = (value) => {
       alert(value)
