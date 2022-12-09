@@ -2,7 +2,7 @@ import "../css/Form.css"
 export const Form = (props) => {
     return (
     <form>
-    <label for="sport" className="header">Choose A Sport:</label><br />
+    <label for="sport" className="secsep">Choose A Sport:</label><br />
     <select name="sport" id="sport" form="sportform" className="select">
       <option value="Football">Football</option>
       <option value="Baseball">Baseball</option>
@@ -19,19 +19,19 @@ export const Form = (props) => {
       <option value="Wrestling">Wrestling</option>
     </select><br />
       <label for="type" className="header">Which Type?</label><br />
-      <input type="radio" id="Mens" name="gender" value="Mens" />
+      <input type="radio" className="button" id="Mens" name="gender" value="Mens" />
       <label for="Mens">Mens</label><br />
-      <input type="radio" id="Womens" name="gender" value="Womens" />
+      <input type="radio" className="button" id="Womens" name="gender" value="Womens" />
       <label for="Womens">Womens</label><br />
-      <input type="radio" id="WontMatter" name="gender" value="Womens" />
+      <input type="radio" className="button" id="WontMatter" name="gender" value="Womens" />
       <label for="WontMatter">Doesn't Have Gender Specific Type</label><br />
 
       <label for="Where" className="header">Where?</label><br />
-      <input type="radio" id="Home" name="where" value="Home" />
+      <input type="radio" className="button" id="Home" name="where" value="Home" />
       <label for="Home">Home</label><br />
-      <input type="radio" id="Away" name="where" value="Away" />
+      <input type="radio" className="button" id="Away" name="where" value="Away" />
       <label for="Away">Away</label><br />
-      <input type="radio" id="Other" name="Other" value="Other" />Other: 
+      <input type="radio" className="button" id="Other" name="where" value="Other" />Other: 
       <input type="text" id="Other" name="Other" /><br />
 
       <label for="Date" className="secsep">Date</label><br />
@@ -94,6 +94,7 @@ export const Form = (props) => {
       <option value="30">30</option>
       <option value="31">31</option>
     </select><br />
+      <label for="sport" className="secsep">Logistics</label><br />
       <label for="Schoolname" className="header">Opposing School:</label><br />
       <input type="text" id="schname" name="schname" /><br />
       <label for="ourscore" className="header">Our score:</label><br />
@@ -101,11 +102,11 @@ export const Form = (props) => {
       <label for="oppscore" className="header">Opposing score:</label><br />
       <input type="text" id="oppscore" name="oppscore" /><br />
       <label for="Where" className="header">Win/lose:</label><br />
-      <input type="radio" id="win" name="win/lose" value="win" />
+      <input type="radio" className="button" id="win" name="win/lose" value="win" />
       <label for="win">Win</label><br />
-      <input type="radio" id="lose" name="win/lose" value="lose" />
+      <input type="radio" className="button" id="lose" name="win/lose" value="lose" />
       <label for="lose">Lose</label><br />
-      <input type="radio" id="Place" name="Place" value="Place" />Place: 
+      <input type="radio" className="button" id="Place" name="win/lose" value="Place" />Place: 
       <input type="text" id="Place" name="Place" /><br />
       <input type="submit" className="submit" value="submit" /><br />
     </form>
