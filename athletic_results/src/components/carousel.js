@@ -4,7 +4,7 @@ import './carousel.css';
 
 
 
-export const ReactCarousel = () => {
+export const HeaderCarousel = () => {
         return (
             <Carousel showThumbs={false} dynamicHeight={false} infiniteLoop={true} showStatus={false} autoPlay={true} interval={5000} stopOnHover={false} showArrows={false} >
                 <div>
